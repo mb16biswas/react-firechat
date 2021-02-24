@@ -1,0 +1,41 @@
+.curr {
+    border: 2px solid #dedede;
+    background-color: #f1f1f1;
+    border-radius: 5px;
+    padding: 10px;
+    
+    margin: 10px 0;
+    word-wrap: break-word;
+    box-shadow: 0 16px 32px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19)
+    ;
+    
+  }
+  
+.mess {
+    border-color: #ccc;
+    background-color: #ddd;
+  
+   
+  
+  }
+  
+.curr::after {
+    content: "";
+    clear: both;
+    display: table;
+  }
+  
+.curr img {
+    float: left;
+    max-width: 60px;
+    width: 100%;
+    margin-right: 20px;
+    border-radius: 50%;
+    box-shadow: 0 4px 6px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19)
+  }
+  
+.curr img.right {
+    float: right;
+    margin-left: 20px;
+    margin-right:0;
+  }
