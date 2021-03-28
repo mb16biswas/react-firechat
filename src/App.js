@@ -1,10 +1,11 @@
 import React, {Component} from 'react'
 import {db} from "./Components/Firebaseconfig/firebaseconfig"
-import {firebase} from "./Components/Firebaseconfig/firebaseconfig"
+import {fr} from "./Components/Firebaseconfig/firebaseconfig"
 import "./App.css"
 import Landingpage from "./Components/Landingpage/Landingpage"
 import Navbar from "./Components/Navbar/Navbar"
 import Message from "./Components/Message/Message"
+import firebase from "firebase"
 
 class App extends Component{
  constructor(){
@@ -45,20 +46,20 @@ class App extends Component{
             db.collection("Room").doc(room).set({
       
      
-             timestamp : Date.now() , 
+             timestamp : firebase.firestore.FieldValue.serverTimestamp() , 
              password :  password 
           })
 
            db.collection(`Room/${room}/rooms`).add({
-              message : "Hola..." , 
+              message : "admin" , 
               name : this.state.cur_user ,
-              timestamp : Date.now() , 
+              timestamp : firebase.firestore.FieldValue.serverTimestamp() , 
               url : this.state.url
           })
 
           db.collection(`User/${this.state.email}/rooms`).add({
               room : room , 
-              timestamp : Date.now()
+              timestamp : firebase.firestore.FieldValue.serverTimestamp()
         })
 
         }
@@ -117,8 +118,8 @@ class App extends Component{
 
 
   signup = () =>{
-    var provider = new firebase.auth.GoogleAuthProvider();
-    firebase.auth()
+    var provider = new fr.auth.GoogleAuthProvider();
+    fr.auth()
     .signInWithPopup(provider)
     .then((result) => {
      
@@ -133,7 +134,7 @@ class App extends Component{
   }
 
   signout = () =>{
-    firebase.auth().signOut().then(() => {
+    fr.auth().signOut().then(() => {
      
       
     }).catch((error) => {
@@ -158,7 +159,7 @@ class App extends Component{
   componentDidMount(){
     
 
-    this.unsubscribe1 = firebase.auth().onAuthStateChanged((user) =>{
+    this.unsubscribe1 = fr.auth().onAuthStateChanged((user) =>{
       if(user){
         
         
@@ -231,8 +232,14 @@ componentWillUnmount(){
       return(
         <div className = "sign" >
        
-              <button className="sign-in" onClick = {this.signup}>Click here to start</button>
+              <button className="sign-in" onClick = {this.signup}>sign up</button>
               
+
+
+
+                 
+           
+
         </div>
         )
      
@@ -245,7 +252,6 @@ componentWillUnmount(){
 }
 
 export default App 
-
 
 
 
