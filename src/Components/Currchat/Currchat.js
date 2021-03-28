@@ -3,6 +3,7 @@ import {db} from "../Firebaseconfig/firebaseconfig"
 import {TextField} from '@material-ui/core'
 import Chat from "../Chat/Chat"
 import Scroll from "../Scroll/Scroll"
+import firebase from "firebase"
 
 
 
@@ -33,7 +34,7 @@ class Currchat extends Component{
         db.collection(`/Room/${this.state.id}/rooms`).add({
           message : this.state.data , 
           name : this.state.user ,
-          timestamp : Date.now() ,
+          timestamp : firebase.firestore.FieldValue.serverTimestamp() ,
           url : this.state.url
           
     
@@ -76,6 +77,7 @@ class Currchat extends Component{
   
     
     render(){
+      
        
 
         return(
@@ -115,3 +117,5 @@ class Currchat extends Component{
 
 }
 export default Currchat
+
+
