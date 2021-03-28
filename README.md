@@ -6,4 +6,6 @@ it is a chat app with multiple rooms ,
 
 #npm  start
 
-#yu must add your own  firebase configs 
+#you must add your own  firebase configs 
+
+# click here to see the live demo   https://chat-react-new.web.app/
