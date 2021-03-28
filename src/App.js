@@ -230,8 +230,14 @@ componentWillUnmount(){
     else{
       return(
         <div className = "sign" >
-          
-           <button className="sign-in" onClick = {this.signup}>sing up</button>
+       
+              <button className="sign-in" onClick = {this.signup}>Click here to start</button>
+              
+
+
+
+                 
+           
 
         </div>
         )
@@ -245,7 +251,6 @@ componentWillUnmount(){
 }
 
 export default App 
-
 
 
 
