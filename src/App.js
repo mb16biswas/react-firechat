@@ -233,12 +233,6 @@ componentWillUnmount(){
        
               <button className="sign-in" onClick = {this.signup}>Click here to start</button>
               
-
-
-
-                 
-           
-
         </div>
         )
      
