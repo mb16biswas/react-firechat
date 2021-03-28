@@ -10,7 +10,7 @@ const firebaseConfig = {
 };
 
 firebase.initializeApp(firebaseConfig)
-export {firebase}   
+export {firebase as fr}     
 
 const db = firebase.firestore()
 
