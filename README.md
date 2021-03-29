@@ -1,5 +1,6 @@
 # react-firechat
-it is a chat app with multiple rooms , 
+it is a chat app with multiple rooms 
+
 #clone this repo 
 
 #npm install 
