@@ -230,9 +230,9 @@ componentWillUnmount(){
 
     else{
       return(
-        <div className = "sign" >
-       
-              <button className="sign-in" onClick = {this.signup}>sign up</button>
+        <div className = "App" >
+          <img  className = "sign-image" alt="chat" src= " https://mk0xinixqa8hvq91jqt.kinstacdn.com/wp-content/uploads/2017/08/Broadcasting-Messages-and-Internal-Agent-Chatting-with-VICIdial.jpg "/>
+          <button className="sign-in" onClick = {this.signup}>sign up</button>
               
 
 
@@ -252,6 +252,4 @@ componentWillUnmount(){
 }
 
 export default App 
-
-
 
