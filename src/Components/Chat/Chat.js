@@ -7,7 +7,7 @@ const Chat = ({curr_user , name , message , url }) =>{
         return(
             <div className="curr mess">
                 <img alt='Avatar' className = "right" src={url} />
-                <p>{name}</p>
+                <p style = {{fontFamily : "verdana" , color : "blue" }} >{name}</p>
                 <p>{message}</p>
                 
             </div>
@@ -20,7 +20,7 @@ const Chat = ({curr_user , name , message , url }) =>{
         return(
             <div className="curr">
                 <img  alt="Avatar" src= {url}/>
-                <p>{name}</p>
+                <p style = {{fontFamily : "verdana" , color : "red" }}>{name}</p>
                 <p>{message}</p>
                 
             </div>
