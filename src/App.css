@@ -1,26 +1,19 @@
-
 body {
   margin: 0 auto;
   max-width: 600px;
   padding: 0 20px;
- 
 }
-
-.App{
- 
+/* https://www.creativevirtual.com/wp-content/uploads/2018/10/people-on-devices-855x423.png */
+.App {
   display: flex;
   flex-direction: column;
   justify-content: center;
-  
- 
-  
 }
-
 
 button {
   background-color: #9e8fb2;
   background-image: linear-gradient(315deg, #9e8fb2 0%, #a7acd9 74%);
-  border: .5px solid black;
+  border: 0.5px solid black;
   color: rgb(31, 24, 24);
   padding: 15px 32px;
   text-align: center;
@@ -29,19 +22,24 @@ button {
   word-wrap: break-word;
   cursor: pointer;
   font-size: 2.25rem;
-  box-shadow: 0 16px 32px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19)
+  box-shadow: 0 16px 32px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
 }
 
-
-
-
-
 .sign-in {
+  text-align: center;
   position: fixed;
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
- 
+}
+
+.sign-image {
+  text-align: center;
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  box-shadow: 0 16px 32px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
 }
 
 /* https://img.gadgethacks.com/img/04/62/63505005300586/0/manage-recover-your-facebook-chat-messages-history.w1456.jpg */
