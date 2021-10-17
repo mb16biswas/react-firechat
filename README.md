@@ -1,5 +1,5 @@
 # react-firechat
-it is a chat app with multiple rooms 
+A multiple room based chatting app with React.js and Firebase.Here a user can create  multiple rooms or join multiple rooms to communicate with each other's.
 
 #clone this repo 
 
