@@ -1,14 +1,22 @@
+
 # react-firechat
-A multiple room based chatting app with React.js and Firebase.Here a user can create  multiple rooms or join multiple rooms to communicate with each other's.
 
-#clone this repo 
+* A multiple room based chatting app with React.js and Firebase.
 
-#npm install 
+* Here a user can create  multiple rooms or join multiple rooms to communicate with each other's.
 
-#npm  start
+# Deployed Here
+[Live Link](https://chat-react-new.web.app/)
 
-#you must add your own  firebase configs 
+Clone this repo and install the required packages:
 
-# click here to see the live demo   https://chat-react-new.web.app/
+`npm install` 
+
+`npm  start`
+
+you must add your own  firebase configs 
+
+
+# Demo
 
 https://user-images.githubusercontent.com/64213233/137638085-af34fcb2-48a4-4b56-a9f7-3783e9363af9.mp4
